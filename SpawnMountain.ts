@@ -23,9 +23,11 @@ function spawnCircle(yPos:number, height:number, radius:number, count:number) {
 
     const dir = new Vector3(x, 0, z);
     const pos = dir.multiply(radius);
-    pos.y = yPos;
+    pos.y = yPos + (-0.5 * Math.random());
 
-    spawnPrimitive.cube(pos, new Vector3(1, height, 1), Quaternion.fromEuler(new Vector3(0, Math.random() * Math.PI, 0)), Color.randomHue(), 1, true, 'Static', undefined);
+    const blockRadius = 1.5 + Math.random();
+
+    spawnPrimitive.cube(pos, new Vector3(blockRadius, height, blockRadius), Quaternion.fromEuler(new Vector3(0, Math.random() * Math.PI, 0)), new Color(0.15, 0.25 + (Math.random() * 0.75), 0.15), 1, true, 'Static', undefined);
 
   }
 }
