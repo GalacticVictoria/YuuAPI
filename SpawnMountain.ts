@@ -6,7 +6,7 @@ import { registerStart } from "./Yuu API/RegisterStart";
 import { spawnPrimitive } from "./Yuu API/SpawnPrimitive";
 
 
-registerStart(start);
+//registerStart(start);
 async function start() {
   //grass block rings
   spawnCircle(0.35, 0.7, 0.15, 3, 5, 2.5, 2, 0.1, 0.05, 0.25, 0.75, 0.1, 0.05, false);
