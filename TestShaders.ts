@@ -12,8 +12,6 @@ import { spawnPrimitive } from "./Yuu API/SpawnPrimitive";
 registerStart(start);
 function start() {
 
-    spawnPrimitive.plane("Front", new Vector3(0, 5, -1.5), new Vector3(3.2, 1.8, 1), new Quaternion, new Color(0, 0.2, 0.5), 1, "Convex", "Animated", undefined)
-
-    spawnPrimitive.plane("Front", new Vector3(0, 2, -1.5), new Vector3(3.2, 1.8, 1), new Quaternion, new Color(0, 0, 0), 1, "Convex", "Animated", undefined)
+    spawnPrimitive.plane("Front", new Vector3(0, 2, -1.5), new Vector3(3.2, 1.8, 1), new Quaternion, new Color(0, 0.2, 0.5), 1, "Convex", "Animated", undefined);
 
 }
