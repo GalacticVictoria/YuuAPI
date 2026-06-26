@@ -11,7 +11,7 @@ import { spawnPrimitive } from "./Yuu API/SpawnPrimitive";
 registerStart(start);
 function start() {
 
-    spawnPrimitive.plane("Front", new Vector3(0, 1, 2), new Vector3(1, 1, 1), Quaternion, new Vector3(0, 0, 0), 1, true, "Static", undefined)
+    spawnPrimitive.plane("Front", new Vector3(0, 3, 2), new Vector3(3, 1, 1), Quaternion, new Vector3(0, 0, 0), 1, true, "Static", undefined)
 
 
 }
