@@ -22,6 +22,16 @@ function start() {
     "Animated", 
     undefined);
 
+    const plane2 = spawnPrimitive.plane(
+    "Front", 
+    new Vector3(0, 3.0, -1.5), 
+    new Vector3(3.2, 1.8, 1), 
+    Quaternion.one, new Color(0, 0.2, 0.5), 
+    1, 
+    "Convex", 
+    "Animated", 
+    undefined);
+
     const shaderCode = `shader_type spatial;
 
 uniform vec2 resolution = vec2(1920.0,1080.0);
